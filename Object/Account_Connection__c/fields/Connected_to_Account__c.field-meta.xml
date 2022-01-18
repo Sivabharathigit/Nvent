@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connected_to_Account__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Child Account in the Account Connections relationship</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Account you are defining the relationship for</inlineHelpText>
+    <label>Connected to Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Connected from Accounts</relationshipLabel>
+    <relationshipName>Account_Connections1</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

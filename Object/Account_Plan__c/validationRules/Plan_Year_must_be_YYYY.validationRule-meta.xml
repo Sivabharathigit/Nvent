@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_Year_must_be_YYYY</fullName>
+    <active>true</active>
+    <description>Forces format for Plan Year field to YYYY</description>
+    <errorConditionFormula>NOT ( ISNUMBER ( Plan_Year__c ) ) 
+
+|| 
+
+LEN ( Plan_Year__c ) &lt; 4</errorConditionFormula>
+    <errorMessage>The Plan Year field must be in YYYY format</errorMessage>
+</ValidationRule>
